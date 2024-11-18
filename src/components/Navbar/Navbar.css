@@ -1,0 +1,86 @@
+/* Navbar container */
+.navbar {
+    position: relative; /* Ensure navbar stays on top of the background */
+    top: 0;
+    width: 100%;
+    padding: 10px 10px; /* Padding for spacing */
+    background:#FEC846; /* Semi-transparent background */
+    /* Blur effect */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center; /* Center items vertically */
+    z-index: 10; /* Ensure navbar is above background */
+    
+  }
+  
+  /* Logo styling */
+  .logo img {
+    width: 125px; /* Size of logo */
+    height: 55px; /* Size of logo */
+    border-radius: 50%; /* Circular logo */
+    cursor: pointer; /* Makes the logo clickable */
+  }
+  
+  /* Navigation links styling */
+  .nav-links {
+    list-style:  none;; /* Remove default list style */
+    display: flex; /* Horizontal layout */
+    margin: 0; /* Remove margin */
+    align-items: center;
+  }
+  
+  .nav-links li {
+    margin-left: 125px;
+     /* Space between links */
+  }
+  
+  .nav-links a {
+    text-decoration: none; /* Remove underline */
+    font-size: 1rem; /* Font size */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Font family */
+    color: #0c0c0c; /* Text color */
+    font-weight: bold; /* Bold text */
+    transition: color 0.3s ease; /* Smooth hover transition */
+  }
+  
+  .nav-links a:hover {
+    color: #f33012; /* Color change on hover */
+  }
+
+  .cart {
+    position: relative;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .dot {
+    position: relative;
+    left: 1px;
+    bottom:35px;
+  }
+  
+  .cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+  }
+  
+  
+  /* Ensure responsive behavior */
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column; /* Stack links vertically on small screens */
+      margin-top: 10px; /* Space above stacked links */
+    }
+  
+    .nav-links li {
+      margin-left: 0; /* Remove margin on stacked items */
+      margin-top: 10px; /* Space between stacked items */
+    }
+  }
+  

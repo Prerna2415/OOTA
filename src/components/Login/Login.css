@@ -1,0 +1,101 @@
+/* Login Page Styles */
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('C:\Users\ADMIN\frontend and backend\ootareal\ootaog\src\assets\about_us_bg_image.jpg'); /* Add your background image path here */
+  background-size: cover;
+  background-position: center;
+}
+
+.login-box {
+  width: 350px;
+  padding: 40px;
+  background-color: rgba(254, 200, 70, 0.9); /* Slight transparency for blend with background */
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.login-box:hover {
+  transform: translateY(-5px);
+}
+
+.login-title {
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-group {
+  text-align: left;
+}
+
+.input-group label {
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input-group input:focus {
+  border-color: #f0a500;
+  box-shadow: 0 0 8px rgba(240, 165, 0, 0.2);
+  outline: none;
+  background-color: #fff;
+}
+
+.login-btn {
+  padding: 12px;
+  background-color: #f0a500;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #d99d00; /* Darker yellow shade on hover */
+  box-shadow: 0 4px 10px rgba(217, 157, 0, 0.3);
+}
+
+.login-footer {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 20px;
+}
+
+.login-footer a {
+  color: #0d0706;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.login-footer a:hover {
+  color: #0d0706;
+  text-decoration: underline;
+}

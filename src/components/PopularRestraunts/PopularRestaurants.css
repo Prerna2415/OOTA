@@ -1,0 +1,89 @@
+/* Popular Restaurants Section Styles */
+.popular-restaurants-section {
+    text-align: center;
+    margin: 60px 0;
+    background-color: #ffffff;
+}
+
+.restaurants-title {
+    font-family: 'Roboto', 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    color: #333;
+    padding-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+}
+
+.restaurants-container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.restaurant-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin: 15px; /* Space between cards */
+    transition: transform 0.2s; 
+}
+
+.restaurant-item:hover {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.restaurant-name {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.restaurant-places {
+    font-size: 1rem;
+    color: #666;
+}
+
+.see-more {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.see-more:hover {
+    color: #0056b3;
+}
+
+.restaurant-rating {
+    font-size: 1.2rem; /* Font size for the stars */
+    color: #f5c518; /* Gold color for the stars */
+    margin-top: 5px;
+}
+
+.rating-value {
+    font-size: 0.9rem;
+    color: #333;
+    margin-left: 5px; /* Spacing between stars and numeric rating */
+}
+
+.restaurant-image {
+    width: 75px; /* Width */
+    height: 75px; /* Height */
+    object-fit: cover; /* Cover the area, maintaining aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners */
+    margin-bottom: 10px; /* Space below the image */
+    filter: brightness(0.9); /* Slightly adjust brightness for better appearance */
+}

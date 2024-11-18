@@ -1,0 +1,43 @@
+/* General styling for the hero section */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('../../assets/bg_image.jpg') no-repeat center center/cover;
+  color: black;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  overflow: hidden;
+  border-right: 3px solid black;
+  white-space: nowrap;
+  animation: typing 6s steps(30, end) infinite, blink 0.75s step-end infinite; /* Speed increased to 3s */
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  width: 0;
+}
+
+/* Adjust width in `typing` animation to match character length */
+@keyframes typing {
+  0% {
+      width: 0;
+  }
+  50% {
+      width: 29ch;
+  }
+  100% {
+      width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+      border-color: transparent;
+  }
+}

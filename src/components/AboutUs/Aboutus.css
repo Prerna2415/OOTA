@@ -1,0 +1,40 @@
+.about-us {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  background-image: url('C:\Users\ADMIN\frontend and backend\ootareal\ootaog\src\assets\about_us_bg_image.jpg'); /* Add your image URL */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Adjust height as needed */
+}
+
+.about-us::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Transparent black overlay */
+  z-index: 1;
+}
+
+.about-us h1,
+.about-us p {
+  position: relative;
+  z-index: 2; /* Ensures text appears above the overlay */
+}
+
+.about-us h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.about-us p {
+  font-size: 1.25rem;
+  margin: 10px 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
